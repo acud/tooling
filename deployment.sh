@@ -1,13 +1,13 @@
 #!/bin/bash
 
 apt-get update
+apt-get install -y gcc docker.io neovim unzip ocl-icd-opencl-dev git-lfs make ca-certificates curl wget
 
 curl -LO https://go.dev/dl/go1.22.5.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >>~/.bashrc
 source ~/.bashrc
 
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.5.linux-amd64.tar.gz
-apt-get install -y gcc docker.io neovim unzip ocl-icd-opencl-dev git-lfs make ca-certificates curl
 
 install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
@@ -33,9 +33,8 @@ echo "alias co='git checkout'" >>~/.bashrc
 echo "alias gb='git branch'" >>~/.bashrc
 echo "alias gd='git diff'" >>~/.bashrc
 echo "alias gl='git log'" >>~/.bashrc
-echo " alias gll='git log --no-decorate --oneline'" >>~/.bashrc
+echo "alias gll='git log --no-decorate --oneline'" >>~/.bashrc
 echo "alias gca='git commit --amend'" >>~/.bashrc
-echo "alias k='kubectl'" >>~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >>~/.bashrc
 source ~/.bashrc
 mkdir -p ~/go/src/github.com/spacemeshos
