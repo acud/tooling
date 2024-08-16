@@ -56,6 +56,7 @@ cd node
 wget https://github.com/spacemeshos/quicksync-rs/releases/download/v0.1.15/quicksync-linux-v0.1.15.zip
 unzip quicksync-linux-v0.1.15.zip && rm quicksync-linux-v0.1.15.zip
 curl -LO https://raw.githubusercontent.com/acud/tooling/main/run.sh
+curl -LO https://configs.spacemesh.network/config.mainnet.json
 chmod +x run.sh
 chmod +x quicksync
 ./quicksync download --node-data ./node-data
