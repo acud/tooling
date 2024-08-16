@@ -59,4 +59,4 @@ curl -LO https://raw.githubusercontent.com/acud/tooling/main/run.sh
 curl -LO https://configs.spacemesh.network/config.mainnet.json
 chmod +x run.sh
 chmod +x quicksync
-./quicksync download --node-data ./node-data
+./quicksync download --node-data ./data
