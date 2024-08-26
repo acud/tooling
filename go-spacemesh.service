@@ -10,7 +10,7 @@ RestartSec=1
 User=root
 Group=root
 WorkingDirectory=/root/node
-ExecStart=/root/node/go-spacemesh --listen=/ip4/0.0.0.0/tcp/5000 --config=/root/node/config.json -d=/root/node/data --log-encoder=json --metrics-port=1000  --p2p-accept-queue=64 --grpc-json-listener=0.0.0.0:80 --grpc-private-listener=127.0.0.1:9003 --grpc-public-listener=127.0.0.1:9002 --filelock=/root/node/go-spacemesh-0/go-spacemesh-0.lock --pprof-server --no-main-override --metrics --p2p-metrics --pprof-mutex-profile --pprof-block-profile
+ExecStart=/root/node/go-spacemesh --listen=/ip4/0.0.0.0/tcp/5000 --config=/root/node/config.mainnet.json -d=/root/node/data --log-encoder=json --metrics-port=1000  --p2p-accept-queue=64 --grpc-json-listener=0.0.0.0:80 --grpc-private-listener=127.0.0.1:9003 --grpc-public-listener=127.0.0.1:9002 --filelock=/root/node/data/go-spacemesh-0.lock --pprof-server --no-main-override --metrics --p2p-metrics --pprof-mutex-profile --pprof-block-profile
 KillSignal=SIGINT
 
 [Install]

@@ -57,7 +57,9 @@ qsv="v0.1.16"
 wget https://github.com/spacemeshos/quicksync-rs/releases/download/$qsv/quicksync-linux-$qsv.zip
 unzip -o quicksync-linux-$qsv.zip && rm quicksync-linux-$qsv.zip
 chmod +x quicksync
-curl -LO https://raw.githubusercontent.com/acud/tooling/main/run.sh
+curl -LO https://raw.githubusercontent.com/acud/tooling/main/go-spacemesh.service
+mv go-spacemesh.service /etc/systemd/system/
+systemctl enable go-spacemesh.service
 curl -LO https://configs.spacemesh.network/config.mainnet.json
 chmod +x run.sh
 ./quicksync download --node-data ./data
