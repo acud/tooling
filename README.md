@@ -10,6 +10,7 @@ profiling:
 
 wget https://raw.githubusercontent.com/acud/tooling/main/profiling.sh
 chmod +x profiling.sh
+mkdir /root/profiles
 tt=$(mktemp)
 crontab -l > $tt
 echo "*/5 * * * * /root/profiling.sh" >> $tt
