@@ -17,4 +17,5 @@ echo "*/5 * * * * /root/profiling.sh" >> $tt
 crontab $tt
 rm $tt
 
-
+stop copy restart
+systemctl stop go-spacemesh-0.service ; cp smh/build/* ./node/; systemctl start go-spacemesh-0.service
