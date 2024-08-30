@@ -21,7 +21,7 @@ echo \
 	sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 apt-get update
 
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 echo 'export GOPATH="/root/go"' >>~/.bashrc
 echo "alias v='nvim'" >>~/.bashrc
@@ -64,6 +64,5 @@ curl -LO https://raw.githubusercontent.com/acud/tooling/main/go-spacemesh.servic
 mv go-spacemesh.service /etc/systemd/system/
 systemctl enable go-spacemesh.service
 curl -LO https://configs.spacemesh.network/config.mainnet.json
-chmod +x run.sh
 echo "done!"
 echo "to quicksync, run: screen -L ./quicksync download --node-data ./data"
