@@ -56,6 +56,8 @@ cd node
 wget https://www.sqlite.org/2024/sqlite-tools-linux-x64-3460100.zip
 unzip sqlite-tools-linux-x64-3460100.zip
 
+go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
+
 qsv="v0.1.16"
 wget https://github.com/spacemeshos/quicksync-rs/releases/download/$qsv/quicksync-linux-$qsv.zip
 unzip -o quicksync-linux-$qsv.zip && rm quicksync-linux-$qsv.zip
