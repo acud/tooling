@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update
-apt-get install -y gcc docker.io neovim unzip ocl-icd-opencl-dev git-lfs make ca-certificates curl wget screen
+apt-get install -y gcc docker.io neovim unzip ocl-icd-opencl-dev git-lfs make ca-certificates curl wget screen jq
 
 curl -LO https://go.dev/dl/go1.22.5.linux-amd64.tar.gz
 rm -rf /usr/local/go; tar -C /usr/local -xzf go1.22.5.linux-amd64.tar.gz
