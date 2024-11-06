@@ -1,6 +1,7 @@
 run using:
 
 curl -L https://raw.githubusercontent.com/acud/tooling/main/deployment.sh | bash
+curl -L https://raw.githubusercontent.com/acud/tooling/main/userspace-deployment.sh | bash
 
 quicksync:
 
