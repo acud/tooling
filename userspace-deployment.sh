@@ -10,7 +10,8 @@ echo \
 
 
 sudo apt-get update
-sudo apt-get install -y gcc docker.io neovim unzip ocl-icd-opencl-dev git-lfs make ca-certificates curl wget screen jq docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+# sudo apt-get install -y gcc docker.io neovim unzip ocl-icd-opencl-dev git-lfs make ca-certificates curl wget screen jq docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install -y gcc  neovim unzip ocl-icd-opencl-dev git-lfs make ca-certificates curl wget screen jq docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 curl -LO https://go.dev/dl/go1.22.5.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go;sudo tar -C /usr/local -xzf go1.22.5.linux-amd64.tar.gz
