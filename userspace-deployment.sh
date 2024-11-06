@@ -14,8 +14,7 @@ sudo apt-get install -y gcc docker.io neovim unzip ocl-icd-opencl-dev git-lfs ma
 
 curl -LO https://go.dev/dl/go1.22.5.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go;sudo tar -C /usr/local -xzf go1.22.5.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
-echo 'export PATH=$PATH:/usr/local/go/bin' >>~/.bashrc
+echo 'export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/.bin' >>~/.bashrc
 source ~/.bashrc
 
 echo "export GOPATH=\"$HOME/go\"" >>~/.bashrc
@@ -31,9 +30,7 @@ echo "alias gd='git diff'" >>~/.bashrc
 echo "alias gl='git log'" >>~/.bashrc
 echo "alias gll='git log --no-decorate --oneline'" >>~/.bashrc
 echo "alias gca='git commit --amend'" >>~/.bashrc
-echo 'export PATH=$PATH:$GOPATH/bin' >>~/.bashrc
 mkdir ~/.bin
-export PATH=$PATH:$GOPATH/bin:/root/.bin
 
 source ~/.bashrc
 mkdir -p ~/go/src/github.com/spacemeshos
