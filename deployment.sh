@@ -22,6 +22,7 @@ echo \
 apt-get update
 
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+systemctl enable --now docker
 
 echo 'export GOPATH="/root/go"' >>~/.bashrc
 echo "alias v='nvim'" >>~/.bashrc
