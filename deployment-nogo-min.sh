@@ -15,7 +15,6 @@ echo \
 apt-get update
 
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-systemctl enable --now docker
 
 echo "alias v='nvim'" >>~/.bashrc
 echo "alias co='git checkout'" >>~/.bashrc
@@ -30,3 +29,7 @@ echo "alias gl='git log'" >>~/.bashrc
 echo "alias gll='git log --no-decorate --oneline'" >>~/.bashrc
 echo "alias gca='git commit --amend'" >>~/.bashrc
 mkdir ~/.bin
+
+systemctl enable --now docker
+
+curl https://rclone.org/install.sh | sudo bash
